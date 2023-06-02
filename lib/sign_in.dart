@@ -61,8 +61,8 @@ class SignInPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  vertical: MediaQuery.of(context).size.height * 0.01),
+              padding: EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 0.015, bottom: MediaQuery.of(context).size.height * 0.025,),
               child: TextFormField(
                 decoration: InputDecoration(
                   //labelText: "Email",
@@ -75,9 +75,7 @@ class SignInPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.03,
-            ),
+            
             Text(
               "Password",
               style: TextStyle(
@@ -145,10 +143,10 @@ class SignInPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.02,
+              height: MediaQuery.of(context).size.height * 0.03,
             ),
             Center(
-              child: InkWell(
+              child: GestureDetector(
                 onTap: () {},
                 child: Text(
                   "Not Registered Yet ? Click Here to",
